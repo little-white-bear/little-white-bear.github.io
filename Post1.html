@@ -15,7 +15,7 @@ Released   : 20100928
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Little-Bear-Blog</title>
+<title>初投稿</title>
 <link href="little-white-bear.github.io/theme/css/style.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="little-white-bear.github.io/" type="application/atom+xml" rel="alternate" title="Little-Bear-Blog ATOM Feed" />
 </head>
@@ -24,18 +24,44 @@ Released   : 20100928
 	<div id="page">
 		<div id="page-bgtop">
 			<div id="page-bgbtm">
-<div id="content">
-<div class="post">  
-        
-				<ul>
-                                    <li>Game</li>
-                                    <li>開発</li>
-                                </ul>
-        
-        
-        
+    
+                        	<div id="content">
+					<div class="post">
+						<h2 class="title"><a href="Post1.html">初投稿</a></h2>
+						<p class="meta"><span class="date">Le 日 03 10月 2021 </span><span class="posted">Par <a href="#">B</a></span><span>&nbsp; | Catégorie : <a href="little-white-bear.github.io/category/kai-fa.html">開発</a></span></p>
+					<p class="meta">Tags : <span><a href="little-white-bear.github.io/tag/tou-gao.html">投稿</a> / </span>
+</p>	
+						<div style="clear: both;">&nbsp;</div>
+						<div class="entry">
+						 <p>pelicanとgithubを使ってブログ公開してみた。<br>
+備忘のため、ブログ更新方法をメモします。</p>
+<p>contentフォルダ配下を更新した後、blogフォルダで以下コマンドを実行する。  </p>
+<div class="highlight"><pre><span></span><code>$ make publish  
+$ ghp-import output  
+$ git push https://github.com/kkumamon/kkumamon.github.io.git gh-pages:master  
+</code></pre></div>
+
+<p>push前に編集結果を確認する場合は、</p>
+<div class="highlight"><pre><span></span><code>$ make html
+$ make serve
+</code></pre></div>
+
+<p>を実行した後、「http://localhost:8000/」にブラウザにアクセスする。</p>
+<h3>参考URL</h3>
+<p>● pelican</p>
+<div class="highlight"><pre><span></span><code>http://daikishimada.github.io/pelican-start.html
+https://qiita.com/saira/items/71faa202efb4320cb41d
+</code></pre></div>
+
+<p>● Homebrew</p>
+<div class="highlight"><pre><span></span><code>https://qiita.com/omega999/items/6f65217b81ad3fffe7e6
+</code></pre></div>	
+						</div>
+					</div>
+			      
+					<div style="clear: both;">&nbsp;</div>
 				</div>
-				</div>
+				<!-- end #content -->
 				<div id="sidebar">
 					<div id="logo">
 						<h1><a href="little-white-bear.github.io">Little-Bear-Blog</a></h1>
@@ -51,7 +77,7 @@ Released   : 20100928
 							<h2>Catégories</h2>
 							<ul>
 								 <li ><a href="little-white-bear.github.io/category/game.html">Game</a></li>
-								 <li ><a href="little-white-bear.github.io/category/kai-fa.html">開発</a></li>
+								 <li class="active"><a href="little-white-bear.github.io/category/kai-fa.html">開発</a></li>
 							</ul>
 						</li>
 						<li>

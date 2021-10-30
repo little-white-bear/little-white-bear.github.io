@@ -15,7 +15,7 @@ Released   : 20100928
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Little-Bear-Blog</title>
+<title>Jenkinsインストール／構築①</title>
 <link href="little-white-bear.github.io/theme/css/style.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="little-white-bear.github.io/" type="application/atom+xml" rel="alternate" title="Little-Bear-Blog ATOM Feed" />
 </head>
@@ -24,18 +24,36 @@ Released   : 20100928
 	<div id="page">
 		<div id="page-bgtop">
 			<div id="page-bgbtm">
-<div id="content">
-<div class="post">  
-        
-				<ul>
-                                    <li>Game</li>
-                                    <li>開発</li>
-                                </ul>
-        
-        
-        
+    
+                        	<div id="content">
+					<div class="post">
+						<h2 class="title"><a href="Jenkins1.html">Jenkinsインストール／構築①</a></h2>
+						<p class="meta"><span class="date">Le 土 09 10月 2021 </span><span class="posted">Par <a href="#">B</a></span><span>&nbsp; | Catégorie : <a href="little-white-bear.github.io/category/kai-fa.html">開発</a></span></p>
+					<p class="meta">Tags : <span><a href="little-white-bear.github.io/tag/tou-gao.html">投稿</a> / </span>
+</p>	
+						<div style="clear: both;">&nbsp;</div>
+						<div class="entry">
+						 <div class="highlight"><pre><span></span><code>$ brew install jenkins
+$ brew services start jenkins
+</code></pre></div>
+
+<p>ブラウザでhttp://localhost:8080/にアクセスすると、<br>
+Unlock Jenkinsのページが表示される</p>
+<p>~/.jenkins/secrets/initialAdminPassword<br>
+の内容をパスワード欄にコピーペーストしてcontinueを押下  </p>
+<p>推奨プラグインをインストール</p>
+<p>ユーザ作成画面が表示される<br>
+ユーザ名：自分の名前<br>
+PW：MacログインPWと同一<br>
+メール：yahooのやつ  </p>
+<p>■参考<br>
+https://qiita.com/shirasaya0201/items/863a05117c934856e532</p>	
+						</div>
+					</div>
+			      
+					<div style="clear: both;">&nbsp;</div>
 				</div>
-				</div>
+				<!-- end #content -->
 				<div id="sidebar">
 					<div id="logo">
 						<h1><a href="little-white-bear.github.io">Little-Bear-Blog</a></h1>
@@ -51,7 +69,7 @@ Released   : 20100928
 							<h2>Catégories</h2>
 							<ul>
 								 <li ><a href="little-white-bear.github.io/category/game.html">Game</a></li>
-								 <li ><a href="little-white-bear.github.io/category/kai-fa.html">開発</a></li>
+								 <li class="active"><a href="little-white-bear.github.io/category/kai-fa.html">開発</a></li>
 							</ul>
 						</li>
 						<li>
